@@ -1,0 +1,150 @@
+/* Tulostuksen muotoilu */
+header, nav, #haku, #banner, #sisalto .ennuste-menu {
+	display: none;
+}
+body {
+	margin-top: 0.5cm;
+	margin-left: 0.5cm;
+	margin-right: 0.5cm;
+	margin-bottom: 0.5cm;
+  
+	background-image: url(fmi-brand-element.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-color: #DAECF7;
+	font-family: "Raleway", Helvetica, sans-serif;
+	font-size: 10pt;
+	height: 90%;
+	
+	overflow: hidden;
+}
+h1 {
+	page-break-after: avoid;
+	page-break-inside: avoid;
+}
+ul {
+	page-break-before: avoid;
+}
+img {
+	page-break-inside: avoid;
+}
+#sisalto {
+	background-color: #FFF;
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 80%;
+	top: 0.5cm;
+	bottom: 0.5cm;
+	left: 0.5cm;
+	right: 0.5cm;
+}
+#sisalto table,tr,td,th {
+	border-style: none;
+	border-collapse: collapse;
+}
+#sisalto table {
+	width: 100%;
+}
+
+#sisalto div.weather-cloudy {
+	background-image: url(weather-cloudy.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:30px;
+	height:30px;
+}
+#sisalto div.weather-snow {
+	background-image: url(weather-snow.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:30px;
+	height:30px;
+}
+#sisalto div.weather-cloudy-broken {
+	background-image: url(weather-cloudy-broken.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:30px;
+	height:30px;
+}
+#sisalto div.weather-cavok {
+	background-image: url(weather-cavok.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:30px;
+	height:30px;
+}
+
+#sisalto div.wind-c {
+	background-image: url(C.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:24px;
+	height:24px;
+}
+#sisalto div.wind-n {
+	background-image: url(N.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:24px;
+	height:24px;
+}
+#sisalto div.wind-ne {
+	background-image: url(NE.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:24px;
+	height:24px;
+}
+#sisalto div.wind-e {
+	background-image: url(E.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:24px;
+	height:24px;
+}
+#sisalto div.wind-se {
+	background-image: url(SE.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:24px;
+	height:24px;
+}
+#sisalto div.wind-s {
+	background-image: url(S.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:24px;
+	height:24px;
+}
+#sisalto div.wind-sw {
+	background-image: url(SW.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:24px;
+	height:24px;
+}
+#sisalto div.wind-w {
+	background-image: url(W.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:24px;
+	height:24px;
+}
+#sisalto div.wind-nw {
+	background-image: url(NW.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:24px;
+	height:24px;
+}
+#sisalto div.wind-speed {
+	padding-top: 6px;
+	font-family: Roboto,sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+}

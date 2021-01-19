@@ -1,0 +1,758 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Viikkotehtävä 1</title>
+		<link href="vt1_style.css" rel="StyleSheet" type="text/css" />
+		<link rel="StyleSheet" href="vt1_print.css" type="text/css" media="print" />
+	</head>
+
+	<body>
+	<div id="banner">
+		<div id="rivi">
+		<div class="logo">
+			<img class="sivun-logo" src="fmi-logo-fi.png" alt="Ilmatieteen laitos" />
+		</div>
+		<div class="linkkeja">
+			<ul>
+				<li><span class="fake-link">MOBIILISÄÄ</span></li>
+				<li><span class="fake-link">IN ENGLISH</span></li>
+				<li><span class="fake-link">PÅ SVENSKA</span></li>
+			</ul>
+		</div>
+		<div class="google-haku">
+		
+			<form class="google-haku-kaava" accept-charset="utf-8">
+			<table class="google-haku-kaava">
+				<tbody>
+				<tr>
+				<td class="haku-input"><input name="google-haku" type="text"></td>
+				<td class="haku-nappi"><input name="google-submit" type="button" value="Haku" title="haku"></td>
+				</tr>
+				</tbody>
+			</table>
+			</form>
+		</div>
+		</div>
+	</div>
+	<header>
+		<ul>
+		<li class="kotiin"></li>
+		<li class="aktiivinen">Sää ja meri</li>
+		<li>Ilmasto</li>
+		<li>Palvelut ja tuotteet</li>
+		<li>Teematietoa</li>
+		<li>Tutkimustoiminta</li>
+		<li>Ilmatieteen laitos</li>
+		</ul>
+	</header>
+		<div id="haku">
+			<div class="tiedot">
+				<img src="local-weather-icon.png" alt=""/>
+				<label>Paikallissää:</label>
+			</div>
+			<div class="haku">
+				<input name="search" type="text" placeholder="Jyväskylä" />
+				<input name="submit" type="submit" value=""/>
+			</div>
+		</div>
+		<nav>
+			<ul>
+				<li class="header">Sää ja meri</li>
+				<li class="subheader">Paikallissää</li>
+				<li class="sublist">
+					<ul>
+						<li>Suomen havainnot</li>
+						<li>Säämerkkien selitykset</li>
+						<li>Sääennusteen osuvuus</li>
+						<li>Euroopan sääkartta</li>
+					</ul>
+				</li>
+				<li>Merisää ja Itämeri</li>
+				<li>Varoitukset ja turvallisuus</li>
+				<li>Sade- ja pilvialueet</li>
+				<li>Pitkän ennusteen seuranta</li>
+				<li>Avaruussää</li>
+				<li>Palvelunumerot ja mobiilisää</li>
+				<li>Muuntolaskuri</li>
+			</ul>
+		</nav>
+		<section id="sisalto">
+			<h1>Sääennuste Jyväskylä</h1>
+			<ul class="ennuste-menu">
+				<li class="ennuste-menu-ensimmainen">
+				<span class="ennuste-menu-ikoni"></span>
+					Lähitunnit
+				</li>
+				<li class="ennuste-menu-valittu">
+				<span class="ennuste-menu-ikoni"></span>
+					Lähipäivät
+				</li>
+				<li class="ennuste-menu-paivittain">
+				<span class="ennuste-menu-ikoni"></span>
+					10 vrk
+				</li>
+				<li class="ennuste-menu-paivittain-lisaa">
+				<span class="ennuste-menu-ikoni"></span>
+					10 vrk
+				</li>
+			</ul>
+			<table>
+				<colgroup>
+					<col class="no-border">
+					<col class="no-border">
+					<col class="border">
+					
+					<col class="no-border">
+					<col class="no-border">
+					<col class="border">
+					
+					<col class="no-border">
+					<col class="no-border">
+					<col class="border">
+					
+					<col class="no-border">
+					<col class="no-border">
+					<col class="border">
+					
+					<col class="no-border">
+					<col class="no-border">
+					<col class="border">
+					
+					<col class="no-border">
+					<col class="no-border">
+					<col class="border">
+					
+					<col class="no-border">
+					<col class="no-border">
+					<col class="no-border">
+				</colgroup>
+				<tr class="pvm">
+					<th colspan="3">ma</th>
+					<th colspan="3">ti</th>
+					<th colspan="3">ke</th>
+					<th colspan="3">to</th>
+					<th colspan="3">pe</th>
+					<th colspan="3">la</th>
+					<th colspan="3">su</th>
+					
+				</tr>
+				<tr class="tunnit">
+				<th class="odd-day">15</th>
+				<th class="odd-day">18</th>
+				<th class="odd-day">21</th>
+				
+				<th class="even-day">15</th>
+				<th class="even-day">18</th>
+				<th class="even-day">21</th>
+				
+				<th class="odd-day">15</th>
+				<th class="odd-day">18</th>
+				<th class="odd-day">21</th>
+				
+				<th class="even-day">15</th>
+				<th class="even-day">18</th>
+				<th class="even-day">21</th>
+				
+				<th class="odd-day">15</th>
+				<th class="odd-day">18</th>
+				<th class="odd-day">21</th>
+				
+				<th class="even-day">15</th>
+				<th class="even-day">18</th>
+				<th class="even-day">21</th>
+				
+				<th class="odd-day">15</th>
+				<th class="odd-day">18</th>
+				<th class="odd-day">21</th>
+				</tr>
+				<tr class="ennuste-kuvat">
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				
+				<td>
+					<div class="weather-cavok" title="Aurinkoista"></div>
+				</td>
+				<td>
+					<div class="weather-cloudy-broken" title="Puoli pilvistä"></div>
+				</td>
+				<td>
+					<div class="weather-snow" title="Heikkoa lumisadetta"></div>
+				</td>
+				
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				<td>
+					<div class="weather-cloudy" title="Pilvistä"></div>
+				</td>
+				
+				</tr>
+				<tr class="ennuste-lampo">
+				<th class="lampo-neg">-4°</th>
+				<th class="lampo-neg">-3°</th>
+				<th class="lampo-neg">-2°</th>
+				
+				<th class="lampo-neg">-1°</th>
+				<th class="lampo-pos">0°</th>
+				<th class="lampo-pos">1°</th>
+				
+				<th class="lampo-neg">-1°</th>
+				<th class="lampo-neg">-2°</th>
+				<th class="lampo-neg">-4°</th>
+				
+				<th class="lampo-neg">-4°</th>
+				<th class="lampo-neg">-4°</th>
+				<th class="lampo-neg">-4°</th>
+				
+				<th class="lampo-neg">-4°</th>
+				<th class="lampo-neg">-4°</th>
+				<th class="lampo-neg">-4°</th>
+				
+				<th class="lampo-neg">-4°</th>
+				<th class="lampo-neg">-4°</th>
+				<th class="lampo-neg">-4°</th>
+				
+				<th class="lampo-neg">-4°</th>
+				<th class="lampo-neg">-4°</th>
+				<th class="lampo-neg">-4°</th>
+				</tr>
+				<tr class="ennuste-tuuli">
+				<td>
+					<div class="wind-n">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				<td>
+					<div class="wind-nw">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				<td>
+					<div class="wind-w">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				
+				<td>
+					<div class="wind-sw">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				<td>
+					<div class="wind-s">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				<td>
+					<div class="wind-se">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				
+				<td>
+					<div class="wind-e">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				<td>
+					<div class="wind-ne">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				<td>
+					<div class="wind-n">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				
+				<td>
+					<div class="wind-c">
+						<div class="wind-speed">0</div>
+					</div>
+				</td>
+				<td>
+					<div class="wind-nw">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				<td>
+					<div class="wind-w">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				
+				<td>
+					<div class="wind-n">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				<td>
+					<div class="wind-nw">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				<td>
+					<div class="wind-w">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				
+				<td>
+					<div class="wind-n">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				<td>
+					<div class="wind-nw">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				<td>
+					<div class="wind-w">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				
+				<td>
+					<div class="wind-n">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				<td>
+					<div class="wind-nw">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				<td>
+					<div class="wind-w">
+						<div class="wind-speed">4</div>
+					</div>
+				</td>
+				</tr>
+				<tr class="valiotsikko"><td colspan="21">Sää tuntuu kuin</td></tr>
+				<tr>
+					<td>
+						<div class="tuntuu-kylmemmalta">
+							<div class="tuntuu-teksti">-8°</div>
+						</div>
+					</td>
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+					<td>
+						<div class="tuntuu-samalta">
+							<div class="tuntuu-teksti">-4°</div>
+						</div>
+					</td>
+				</tr>
+				
+				<tr class="valiotsikko">
+					<td colspan="21">Sateen todennäköisyys ja määrä</td>
+				</tr>
+				
+				<tr class="sateen-todennakoisyydet">
+					<td class="rain-small">
+						40 %
+					</td>
+					<td class="rain-minimal">
+						&lt;10 %
+					</td>
+					<td class="rain-minimal">
+						10 %
+					</td>
+					
+					<td class="rain-minimal">
+						&lt;10 %
+					</td>
+					<td class="rain-minimal">
+						10 %
+					</td>
+					<td class="rain-minimal">
+						&lt;10 %
+					</td>
+					
+					<td class="rain-minimal">
+						&lt;10 %
+					</td>
+					<td class="rain-minimal">
+						10 %
+					</td>
+					<td class="rain-minimal">
+						10 %
+					</td>
+					
+					<td class="rain-minimal">
+						&lt;10 %
+					</td>
+					<td class="rain-minimal">
+						10 %
+					</td>
+					<td class="rain-minimal">
+						&lt;10 %
+					</td>
+					
+					<td class="rain-minimal">
+						&lt;10 %
+					</td>
+					<td class="rain-minimal">
+						&lt;10 %
+					</td>
+					<td class="rain-minimal">
+						&lt;10 %
+					</td>
+					
+					<td class="rain-minimal">
+						&lt;10 %
+					</td>
+					<td class="rain-minimal">
+						&lt;10 %
+					</td>
+					<td class="rain-minimal">
+						10 %
+					</td>
+					
+					<td class="rain-minimal">
+						&lt;10 %
+					</td>
+					<td class="rain-minimal">
+						10 %
+					</td>
+					<td class="rain-minimal">
+						&lt;10 %
+					</td>
+				</tr>
+				<tr class="sade-ennustus-palkit">
+				<td>
+					<div class="bar" style="height: 1px;"></div>
+				</td>
+				<td></td>
+				<td></td>
+				
+				<td></td>
+				<td></td>
+				<td></td>
+				
+				<td></td>
+				<td></td>
+				<td></td>
+				
+				<td></td>
+				<td></td>
+				<td></td>
+				
+				<td></td>
+				<td></td>
+				<td></td>
+				
+				<td></td>
+				<td></td>
+				<td></td>
+				
+				<td></td>
+				<td></td>
+				<td></td>
+				</tr>
+				
+				<tr class="sade-ennustus-yksikot">
+				<td>
+					<span class="maara">
+					0,1
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				<td>
+					<span class="maara">
+					0,0
+					<span class="yksikot">mm (8 h)</span>
+					</span>
+				</td>
+				</tr>
+			</table>
+			
+			<div class="info-bottom">
+				Meteorologin ennuste päivitetty 19.1.2017 20:00. 
+				<span class="fake-link"> Miten ennuste muodostetaan?</span>
+			</div>
+			<div class="varoitusinfo">
+			<div class="varoituslaatikko">
+				<div class="varoitusikoni">
+				</div>
+			</div>
+			<div class="varoitusteksti">
+				Jyväskylä: voimassa seuraava varoitus: <span class="varoitustyyppi">tuulivaroitus</span>.
+				<span class="fake-link">Katso kaikki lähivuorokauden varoitukset&nbsp;»</span>
+			</div>
+			</div>
+		</section>
+	</body>
+
+</html>

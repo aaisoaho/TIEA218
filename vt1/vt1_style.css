@@ -1,0 +1,832 @@
+/* VERKKOSIVUN ULKOASU PÖYTÄKONEELLA */
+body {
+	background-image: url(fmi-brand-element.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-color: #DAECF7;
+	width: 80%;
+	height: 100%;
+	margin-left: 10%;
+	margin-right: 10%;
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	font-family: "Raleway", Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 1.42857143;
+}
+/* Linkkien näköisten tekstien muotoilu */
+.fake-link {
+	color: #2486ce;
+}
+.fake-link:hover {
+	color: #23527c;
+	text-decoration: underline;
+	cursor: pointer;
+}
+/* Bannerin muotoilu */
+#banner {
+	display: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 70px;
+	height: 70px;
+	width: 100%;
+	overflow: hidden;
+}
+#banner div.rivi {
+	margin: 0;
+	padding: 0;
+	margin-left: -10px;
+    margin-right: -10px;
+}
+#banner .logo {
+	display: inherit;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	float: left;
+	width: 33.33333333%;
+}
+#banner .logo img {
+	font-family: Roboto,sans-serif;
+	font-weight: bold;
+	color: #2486ce;
+	margin: 15px 0;
+	border: 0;
+	vertical-align: middle;
+}
+#banner .logo img:hover {
+	cursor: pointer;
+}
+#banner .linkkeja {
+	display: inherit;
+	font-family: Roboto,sans-serif;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+    min-height: 1px;
+	float: left;
+	width: 30%;
+}
+#banner .linkkeja ul {
+	padding: 0;
+	list-style: none;
+	margin: 30px 0 0 0;
+	text-align: center;
+}
+#banner .linkkeja ul li {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #2486ce;
+	display: inline;
+}
+#banner div.google-haku {
+	display: inherit;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	float: right;
+	width: 33.33333333%;
+	margin: 15px 0;
+	padding-top: 7px;
+}
+#banner div.google-haku form.google-haku-kaava {
+	font-size: 13px;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 6px;
+	margin-left: 0;
+	width: 100%;
+	float: right;
+}
+#banner div.google-haku table.google-haku-kaava {
+	border-style: none;
+	border-width: 0;
+	border-spacing: 0 0;
+	width: 100%;
+	margin-bottom: 2px;
+	vertical-align: middle;
+	float: right;
+}
+#banner div.google-haku td.haku-input {
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+	padding-right: 12px;
+}
+#banner div.google-haku td.haku-nappi {
+	margin: 0;
+	padding: 0;
+	width: 1%;
+	vertical-align: middle;
+}
+#banner div.google-haku input[type="text"] {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+	font-family: inherit;
+	border: 1px solid #BBB;
+	padding: 3px 6px;
+	width: 99%;
+	font-size: 16px;
+	outline: medium none;
+	background: rgb(255, 255, 255) url("google_custom_search_watermark.gif") no-repeat scroll left center;
+}
+#banner div.google-haku input[type="button"] {
+	font: inherit;
+	margin: 0;
+	background-color: #63b9e9;
+	margin-left: 2px;
+	font-family: inherit;
+	font-size: 11px;
+	color: #fff;
+	font-weight: bold;
+	padding: 0 8px;
+	height: 27px;
+	min-width: 54px;
+	cursor: pointer;
+	border: none;
+}
+@media all {
+	#banner div.google-haku, #banner div.linkkeja {
+		display: none;
+	}
+}
+@media all and (min-width: 640px) {
+	#banner div.google-haku, #banner div.linkkeja {
+		display: inherit;
+	}
+}
+
+/* HEADER:n muotoilu */
+
+header {
+	position: absolute;
+	background-color: #126CC5;
+	top: 70px;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	overflow: hidden;
+}
+
+header ul {
+	list-style: none;
+	position: relative;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+}
+header li {
+	float: left;
+	position: relative; 
+	display: block;
+	border-radius: 4px;
+	border-right: 1px solid #2283d0;
+	height: 50px;
+	padding: 15px 20px 15px 20px;
+	color: #FFF;
+}
+header ul li.aktiivinen {
+	position: relative;
+	display: block;
+	border-radius: 4px;
+	height: 50px;
+	padding: 15px 20px 15px 20px;
+	background-color: #094dae;
+	margin-left: 0;
+	color: #FFF;
+}
+header ul li:hover {
+	background-color: #0D5CB9;
+}
+header ul li.kotiin {
+	position: relative;
+	display: block;
+	border-radius: 4px;
+	background: url(nav-home.png) no-repeat scroll 0 0;
+	width: 50px;
+	height: 50px;
+	padding: 15px 0 15px 0;
+	margin-left: 0;
+}
+header ul li.kotiin:hover {
+	background: url(home-icon-hover.png) no-repeat scroll 0 0;
+}
+#haku {
+	position: absolute;
+	top: 120px;
+	left: 0;
+	right: 0;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	height: 50px;
+	width: 100%;
+	overflow: hidden;
+}
+div.tiedot {
+	background-color: #3BA22F;
+	position: absolute;
+	top: 8%;
+	bottom: 0%;
+	left: 0%;
+	right: 80%;
+	width: 20%;
+	overflow: hidden;
+	display: inline;
+}
+div.haku {
+	position: absolute;
+	top: 8%;
+	bottom: 0%;
+	left: 20%;
+	right: 0%;
+	width: 80%;
+	overflow: hidden;
+	display: inline;
+}
+div.tiedot img {
+	border: none;
+	position: absolute;
+	padding: 0%;
+	margin: 0%;
+	height: 100%;
+	left: 0;
+	right: 90%;
+	top: 0;
+	bottom: 0;
+}
+div.tiedot label {
+	position: absolute;
+	color: #FFF;
+	padding: 4%;
+	padding-left: 60px;
+	padding-bottom: 8px;
+}
+div.haku input[type="text"] {
+	border: none;
+	position: absolute;
+	vertical-align: top;
+	padding-left: 1%;
+	margin: 0;
+	top: 0;
+	left: 0;
+	padding-right: 81px;
+	width: 100%;
+	height: 100%;
+}
+div.haku input[type="submit"] {
+	background-image: url(local-weather-search-icon-hover.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	vertical-align: top;
+	border: none;
+	padding: 0;
+	margin: 0;
+	right: 0;
+	width: 81px;
+	height: 50px;
+}
+@media all {
+	nav {
+		position: absolute;
+		bottom: 0%;
+		top: 846px;
+		left: 0%;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+}
+@media all and (min-width:640px) {
+	nav {
+		position: absolute;
+		top: 170px;
+		bottom: 0%;
+		left: 0%;
+		right: 80%;
+		width: 20%;
+		padding-top: 3%;
+		overflow: hidden;
+		height: 100%;
+	}
+}
+nav ul {
+	list-style: none;
+	position: relative;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	border-style: none solid none none;
+	border-right-width: 1px;
+	border-right-color: #F8F8F8;
+}
+nav ul li {
+	background-color: #FFF;
+	position: relative;
+	padding: 5%;
+	margin: 0%;
+}
+nav ul li ul{
+	list-style: none;
+	position: relative;
+	padding: 0%;
+	margin: 0%;
+}
+nav ul li ul li {
+	background-color: #F8F8F8;
+	position: relative;
+	padding: 5%;
+	margin: 0%;
+	left: 0%;
+	width: 100%;
+}
+nav ul li:hover {
+	background-color: #0076D6;
+	color: #FFF;
+	padding: 5%;
+	margin: 0%;
+}
+nav li.header {
+	background-color: #53BAE7;
+	color: #FFF;
+	position: relative;
+	padding: 5%;
+	margin: 0%;
+}
+nav li.sublist {
+	background-color: #F8F8F8;
+	padding: 0%;
+	margin: 0%;
+}
+nav li.sublist:hover {
+	background-color: #F8F8F8;
+	color: #000;
+	padding: 0%;
+	margin: 0%;
+}
+nav li.sublist ul li:hover {
+	background-color: #F8F8F8;
+	color: #000;
+	padding: 5%;
+	margin: 0%;
+	border-style: none none none solid;
+	border-left-width: 5px;
+	border-left-color: #2283D0;
+}
+nav li.header:hover {
+	background-color: #53BAE7;
+	color: #FFF;
+	position: relative;
+	padding: 5%;
+	margin: 0%;
+}
+nav li.subheader {
+	background-color: #0076D6;
+	color: #FFF;
+	position: relative;
+	padding: 5%;
+	margin: 0%;
+}
+/* varsinaisen sisällön muotoilu */
+@media all {
+	#sisalto {
+	background-color: #FFF;
+	position: absolute;
+	top: 170px;
+	left: 0%;
+	right: 0%;
+	width: 96%;
+	padding: 2%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 3%;
+	overflow: hidden;
+}
+}
+@media all and (min-width: 640px) {
+	#sisalto {
+	background-color: #FFF;
+	position: absolute;
+	top: 170px;
+	left: 20%;
+	right: 0%;
+	width: 76%;
+	padding: 2%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 3%;
+	overflow: hidden;
+}
+}
+#sisalto h1 {
+	font-family: Roboto,sans-serif;
+	color: #363636;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 0 12px 0;
+	padding: 0 0 6px 0;
+	border-bottom: 1px solid #e6e6e6;
+}
+#sisalto .ennuste-menu {
+	list-style-type: none;
+	border-bottom: 1px solid #e4e4e4;
+	margin: 1em 0 .5em 0;
+	padding: 0 0 0 1em;
+}
+#sisalto .ennuste-menu .ennuste-menu-ensimmainen {
+	width: 23%;
+	display: inline-block;
+	background-color: #e4e4e4;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	color: black;
+	padding: 6px .5em 3px .5em;
+}
+#sisalto .ennuste-menu .ennuste-menu-ensimmainen:hover {
+	background-color: #f2f2f2;
+	cursor: pointer;
+}
+#sisalto .ennuste-menu .ennuste-menu-ensimmainen span.ennuste-menu-ikoni {
+	display: inline-block;
+	height: 32px;
+	width: 1px;
+	vertical-align: middle;
+	margin: 0 0 1px 0;
+}
+#sisalto .ennuste-menu .ennuste-menu-valittu {
+	width: 23%;
+	display: inline-block;
+	background-color: #e4e4e4;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	color: black;
+	padding: 6px .5em 3px .5em;
+	margin-bottom: -1px;
+	background-color: #fff;
+	border: 1px solid #e4e4e4;
+	border-bottom-color: white;
+}
+#sisalto .ennuste-menu .ennuste-menu-valittu span.ennuste-menu-ikoni {
+	display: inline-block;
+	height: 32px;
+	width: 1px;
+	vertical-align: middle;
+	margin: 0 0 1px 0;
+}
+#sisalto .ennuste-menu .ennuste-menu-paivittain {
+	width: 23%;
+	display: inline-block;
+	list-style-type: none;
+	background-color: #e4e4e4;
+	padding: 0;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 6px .5em 3px .5em;
+}
+#sisalto .ennuste-menu .ennuste-menu-paivittain:hover {
+	background-color: #f2f2f2;
+	cursor: pointer;
+}
+#sisalto .ennuste-menu .ennuste-menu-paivittain span.ennuste-menu-ikoni {
+	display: inline-block;
+	height: 32px;
+	vertical-align: middle;
+	margin: 0 0 1px 0;
+	width: 32px;
+	margin-right: .5em;
+	background: transparent url("daily-forecast-menu-icon.svg") no-repeat center center;
+}
+#sisalto .ennuste-menu .ennuste-menu-paivittain-lisaa {
+	width: 23%;
+	display: inline-block;
+	list-style-type: none;
+	background-color: #e4e4e4;
+	padding: 0;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 6px .5em 3px .5em;
+}
+#sisalto .ennuste-menu .ennuste-menu-paivittain-lisaa:hover {
+	background-color: #f2f2f2;
+	cursor: pointer;
+}
+#sisalto .ennuste-menu .ennuste-menu-paivittain-lisaa span.ennuste-menu-ikoni {
+	display: inline-block;
+	height: 32px;
+	vertical-align: middle;
+	margin: 0 0 1px 0;
+	width: 32px;
+	margin-right: .5em;
+	background: transparent url("long-forecast-menu-icon.svg") no-repeat center center;
+}
+
+#sisalto table,tr,td,th {
+	border-style: none;
+	border-collapse: collapse;
+}
+#sisalto table {
+	width: 100%;
+}
+#sisalto col.border {
+	border-style: none solid none none;
+	border-width: 1px;
+	border-color: #D3D3D3;
+	border-collapse: collapse;
+}
+#sisalto tr.valiotsikko {
+	font-family: Roboto,sans-serif;
+	text-align: left;
+	padding: 11px 0 8px 2px;
+	font-size: 12px;
+	color: #333;
+	font-weight: bold;
+}
+/* Ennusteen päivämääräosion muotoilu */
+#sisalto tr.pvm {
+	text-align: left;
+	color: #333333;
+}
+#sisalto tr.pvm th:nth-child(even) {
+	background-color: #F2F2F2;
+	padding: 8px 0 3px 13px;
+}
+#sisalto tr.pvm th:nth-child(odd) {
+	background-color: #E4E4E4;
+	padding: 8px 0 3px 13px;
+}
+#sisalto tr.tunnit th.even-day {
+	background-color: #F2F2F2;
+	padding: 4px 0;
+	color: #363636;
+}
+#sisalto tr.tunnit th.odd-day {
+	background-color: #E4E4E4;
+	padding: 4px 0;
+	color: #363636;
+}
+
+/* Sääikonien muotoilu */
+#sisalto div.weather-cloudy {
+	background-image: url(weather-cloudy.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:40px;
+	height:40px;
+}
+#sisalto div.weather-snow {
+	background-image: url(weather-snow.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:40px;
+	height:40px;
+}
+#sisalto div.weather-cloudy-broken {
+	background-image: url(weather-cloudy-broken.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:40px;
+	height:40px;
+}
+#sisalto div.weather-cavok {
+	background-image: url(weather-cavok.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:40px;
+	height:40px;
+}
+
+/* Lämpötilaosion muotoilu, lampo-neg tarkoittaa negatiivista lämpötilaa (<0 C), 
+	lampo-pos taas positiivista lämpötilaa (>=0 C) */
+#sisalto th.lampo-neg {
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Roboto,sans-serif;
+	padding: 1px 0 0 0;
+	text-align: center;
+	color: #00F;
+}
+#sisalto th.lampo-pos {
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Roboto,sans-serif;
+	padding: 1px 0 0 0;
+	text-align: center;
+	color: #F00;
+}
+
+/* Tuuli-osion muotoilu */
+#sisalto div.wind-c {
+	background-image: url(C.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:36px;
+	height:36px;
+}
+#sisalto div.wind-n {
+	background-image: url(N.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:36px;
+	height:36px;
+}
+#sisalto div.wind-ne {
+	background-image: url(NE.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:36px;
+	height:36px;
+}
+#sisalto div.wind-e {
+	background-image: url(E.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:36px;
+	height:36px;
+}
+#sisalto div.wind-se {
+	background-image: url(SE.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:36px;
+	height:36px;
+}
+#sisalto div.wind-s {
+	background-image: url(S.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:36px;
+	height:36px;
+}
+#sisalto div.wind-sw {
+	background-image: url(SW.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:36px;
+	height:36px;
+}
+#sisalto div.wind-w {
+	background-image: url(W.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:36px;
+	height:36px;
+}
+#sisalto div.wind-nw {
+	background-image: url(NW.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:36px;
+	height:36px;
+}
+#sisalto div.wind-speed {
+	padding-top: 12px;
+	font-family: Roboto,sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+}
+
+/* Tuntuu kuin -osion muotoilu */
+#sisalto div.tuntuu-teksti {
+	font-family: Roboto,sans-serif;
+	color: #363636;
+	text-align: center;
+	padding-top: 21px;
+	padding-left: 1px;
+	font-weight: bold;
+	font-size: 11px;
+}
+#sisalto div.tuntuu-samalta {
+	background-image: url("feels-the-same.svg");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 40px 40px;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+}
+#sisalto div.tuntuu-kylmemmalta {
+	background-image: url("feels-like-colder.svg");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 40px 40px;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+/* Sateen todennäköisyys -osion muotoilu */
+#sisalto tr.sateen-todennakoisyydet td.rain-minimal {
+	border-top: 1px solid #D3D3D3;
+	border-bottom: 1px solid #D3D3D3;
+	height: 40px;
+	text-align: center;
+	font-family: Roboto,sans-serif;
+	color: #363636;
+	font-size: 10px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+#sisalto tr.sateen-todennakoisyydet td.rain-small {
+	background-color: #cce2f5;
+	border-top: 1px solid #D3D3D3;
+	border-bottom: 1px solid #D3D3D3;
+	height: 40px;
+	text-align: center;
+	font-family: Roboto,sans-serif;
+	color: #363636;
+	font-size: 10px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+#sisalto tr.sade-ennustus-palkit {
+	height: 40px;
+}
+#sisalto tr.sade-ennustus-palkit td div.bar {
+	width: 20px;
+	margin: 5px auto 0 auto;
+	background-color: #95c3e9;
+}
+
+#sisalto .sade-ennustus-yksikot {
+	border-bottom: 1px solid #ddd;
+}
+#sisalto .sade-ennustus-yksikot td {
+	vertical-align: middle;
+	text-align: center;
+}
+#sisalto .sade-ennustus-yksikot .maara {
+	box-sizing: border-box;
+	text-align: center;
+	display: block;
+	padding: 3px 0 6px 0;
+	font-size: 11px;
+	font-weight: bold;
+}
+#sisalto .sade-ennustus-yksikot .yksikot {
+	box-sizing: border-box;
+	padding-top: 3px;
+	display: block;
+	font-weight: normal;
+}
+
+/* Varoitus -osion muotoilu */
+#sisalto .info-bottom {
+	font-size: 11px;
+    padding: 10px 0 3px 0;
+    color: #555;
+}
+
+
+#sisalto .varoitusinfo {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	margin: .8em 0;
+	background-color: #f8f8f8;
+	min-height: 40px;
+	border: 1px solid #bd000c;
+}
+#sisalto .varoituslaatikko {
+	background-color: #bd000c;
+	display: table-cell;
+	vertical-align: middle;
+	width: 40px;
+}
+#sisalto .varoitusikoni {
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+	background-image: url("warning.svg");
+	background-size: 40px 40px;
+}
+#sisalto .varoitusteksti {
+	display: table-cell;
+	vertical-align: middle;
+	padding: .8em;
+	font-family: Roboto,sans-serif;
+	font-size: 13px;
+	color: #363636;
+}

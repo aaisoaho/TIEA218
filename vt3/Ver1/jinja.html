@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Peli</title>
+      <link rel="StyleSheet" href="tyylit.css" type="text/css" />
+   </head>
+<body>
+
+   <h1>Peli</h1>
+
+   <p>Kerro luotavan pelialueen koko. Ruudukko on yhtä monta ruutua
+   leveä kuin korkea. </p>
+
+   <form action="vt3.cgi" method="get">
+      <fieldset>
+         <p><label>Koko <input type="text" name="x" /></label></p>
+         <p><label>Teksti <input type="text" name="teksti" /></label></p>
+      </fieldset>
+      <p><input type="submit" value="Luo" /></p>
+   </form>
+
+   <table>
+      <!-- tähän tulisi ruudukko -->
+      {% for i in range(0, koko) %}
+         <tr>
+         {% for j in range(0, koko) %}
+            <td></td>
+         {% endfor %}
+         </tr>
+      {% endfor %}
+   </table>
+
+   <p><!-- Tähän kirjoitettaisiin lomakkeelle annettu teksti -->
+   {{ usertext }}
+   </p>
+
+</body>
+</html>

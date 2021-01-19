@@ -1,2 +1,2 @@
 # TIEA218
-JYU's TIEA218 Web-sovellukset (Web-apps) courses works
+JYU's TIEA218 Web-sovellukset (Web-apps) course's weekly tasks.

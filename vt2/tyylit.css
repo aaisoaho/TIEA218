@@ -1,0 +1,82 @@
+html,body {
+	min-height: 100%;
+	margin:0px;
+	padding:0px;
+}
+table {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000;
+    border-collapse: collapse;
+	table-layout: fixed;
+}
+fieldset fieldset {
+	float:left;
+}
+h1 {
+	font-family: helvetica;
+}
+tr,td {
+	border-style: none;
+	border-width: 0;
+	padding:0px;
+	margin:0px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+tr:nth-child(even) td:nth-child(even) {
+	background-color: #FFF;
+}
+tr:nth-child(even) td:nth-child(odd) {
+	background-color: #000;
+}
+tr:nth-child(odd) td:nth-child(even) {
+	background-color: #000;
+}
+tr:nth-child(odd) td:nth-child(odd) {
+	background-color: #FFF;
+}
+img {
+	display: block;
+	margin: auto auto auto auto;
+}
+#tyyli {
+	background-color: #F00;
+}
+.error {
+	background-color: #F00;
+}
+svg, circle {
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	float: left;
+}
+span#error_msg.hidden_msg {
+	position: relative;
+	display: none;
+	height: 0px;
+}
+span#error_msg.visible_msg {
+	position: relative;
+	display: inherit;
+	color: #f00;
+}
+span#vuorotiedote {
+	position: relative;
+	display: inline;
+	padding-left: 10px;
+	font-weight: bold;
+}
+span#vuorotiedote.turn-blue {
+	color: #00c;
+}
+span#vuorotiedote.turn-red {
+	color: #c00;
+}
+#vuoronvaihto {
+	display:inline;
+}
+#vuoronvaihto.hidden {
+	display: none;
+}

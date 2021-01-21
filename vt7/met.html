@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3chfOj0FjgsoiarxRiHu1VAmkjyTVbOs"></script>
+	<script src="js/omat.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+	<div id="map" style="width:100%; height: 800px"></div>
+    <script type="text/babel">
+		var Dropdown = React.createClass({
+			getInitialState: function() {
+				return { "paikka": 'Jyväskylä'
+				};
+			},
+			render: function(){
+				return (
+					<select>
+					{ 
+						this.props.items.map(function(item) {
+							return <option value={item}>{item}</option>
+						})
+					}
+					</select>
+				)
+			}
+		});
+      ReactDOM.render(
+        <Dropdown items={["Jyväskylä", "Kuopio", "Tampere"]}/>,
+        document.getElementById('root')
+      );
+
+    </script>
+  </body>
+</html>

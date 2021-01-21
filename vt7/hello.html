@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="laskuri"></div>
+    <script type="text/babel">
+		var Counter = React.createClass({
+			getInitialState: function () {
+				return { laskuri: 0 };
+			},
+			kasvataLaskuria: function () {
+				this.setState(function(state) {
+					return {laskuri: state.laskuri + 1};
+			});
+		},
+		render: function () {
+            return (<div>
+                     <p>{this.state.laskuri}</p>
+                     <button onClick={this.kasvataLaskuria}>Lisää</button>
+                     </div>);
+		}
+        });		
+		ReactDOM.render(
+			<Counter />,
+			document.getElementById('laskuri')
+		);
+    </script>
+  </body>
+</html>

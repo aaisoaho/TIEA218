@@ -1,0 +1,23 @@
+label {
+	width: 20%;
+	float: left;
+	display: block;
+}
+#vuokraaja_req, #elokuva_req , #vuokrausPVM_req, #palautusPVM_req, #summa_req {
+	color: red;
+}
+#Loader {
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	margin-top: 36px;
+	margin-left: -110px;
+}
+#Loader.hidden {
+	display: none;
+}
+
+.hidden {
+	display: none;
+}

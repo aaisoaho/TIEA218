@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/vuokraamo.js"></script>
+<link rel="StyleSheet" href="css/vuokraamo.css" type="text/css" />
+<meta charset="utf-8"/>
+<title>Elokuvavuokraamo - Nyt Ajaxina!</title>
+</head>
+<body>
+<header class="hidden">
+<h1>Ilmenneet virheet</h1>
+<ul></ul>
+</header>
+<section id="Kirjaudu">
+<h2>Kirjaudu sisään</h2>
+<form action="kirjaudu" method="post">
+<div><label>Käyttäjätunnus:</label><input type="text" id="ktun" name="ktun" placeholder="Käyttäjä" /></div>
+<div><label>Salasana:</label><input type="password" id="ssana" name="ssana" placeholder="Salasana" /></div>
+<input type="submit" name="kirjaudu" id="kirjaudu" value="Kirjaudu" />
+</form>
+</section>
+<section id="Main" class="hidden">
+<h2>Vuokratut elokuvat</h2>
+<ul id="vuokrauslistaus"></ul>
+<fieldset id="vuokrauslomake">
+<legend>Vuokrauksen tiedot</legend>
+<form action="vuokraa" method="post">
+<div>
+	<label>Vuokraaja</label>
+	<select id="vuokraaja" name="vuokraaja">
+	</select>
+</div>
+<div>
+	<label>Vuokrattava elokuva</label>
+	<select id="elokuva" name="elokuva">
+	</select>
+</div>
+<div>
+	<label>Vuokrauspäivä</label>
+	<input type="text" id="vuokrausPVM" name="vuokrausPVM" placeholder="YYYY-mm-dd" />
+	<span id="vuokrausPVM_req">(*)</span>
+</div>
+<div>
+	<label>Palautuspäivä</label>
+	<input type="text" id="palautusPVM" name="palautusPVM" placeholder="YYYY-mm-dd" />
+	<span id="palautusPVM_req">(!)</span>
+</div>
+<div>
+	<label>Maksettu summa</label>
+	<input type="number" id="summa" name="summa" placeholder="5" />
+	<span id="summa_req">(*)</span>
+</div>
+</form>
+</fieldset>
+	<input type="hidden" name="muokattavan_eid" id="muokattavan_eid" value="" />
+	<input type="hidden" name="muokattavan_jid" id="muokattavan_jid" value="" />
+	<input type="hidden" name="muokattavan_vpvm" id="muokattavan_vpvm" value="" />
+	<p><input type="submit" name="laheta" id="laheta" value="Vuokraa!" /></p>
+	
+	<fieldset>
+	<legend>Poista elokuva</legend>
+	<div>
+	<label>Poistettava elokuva</label><select id="elokuva_poista" name="elokuva_poista">
+	</select>
+	</div>
+	<input type="submit" name="poista_e" id="poista_e" value="Poista elokuva" />
+	</fieldset>
+	<fieldset>
+	<legend>Lisää elokuva</legend>
+	<div><label>Elokuvan nimi</label>
+	<input type="text" name="elokuvannimi" id="e_nimi" />
+	</div>
+	<div><label>Julkaisuvuosi </label>
+	<input type="number" name="julkaisuvuosi" id="julkaisuvuosi" />
+	</div>
+	<div><label>Vuokrahinta</label>
+	<input type="number" id="hinta" name="hinta" placeholder="5" />
+	</div>
+	<div><label>Arvio</label>
+	<input type="number" id="arvio" name="arvio" placeholder="5" />
+	</div>
+	<div><label>Lajityyppi</label>
+	<select id="lajityyppi" name="lajityyppi">
+	</select>
+	</div>
+	<input type="submit" name="lisaa_e" id="lisaa_e" value="Lisää elokuva" />
+</fieldset>
+</section>
+<section id="Loader" class="hidden">
+<h2>Ladataan, odota hetki...</h2>
+<img src="ajax-loader.gif" alt="Ladataan..." />
+</section>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{# määritellään base.html:ssa olevan title-alueen sisältö #}
+{% block title %}Leffavuokraamo - vuokraukset{% endblock title%}
+{# määritellään base.html:ssa olevan content-alueen sisältö #}
+{% block content %}
+<section id="paasivu">
+<h1>Vuokraukset</h1>
+<ul>
+{%for n in nimet %}
+	<li><label>{{n['Nimi']}}</label>
+	<ul>
+	{%for k in kayttajat%}
+		{%for elem in k%}
+			{%if elem['jid'] == n['uid']%}
+			<li>
+				<label>{{elem['elokuva']}}</label>
+				<label>{{elem['vpvm']}}</label>
+				<label>{{elem['ppvm']}}</label>
+				<label>{{elem['summa']}}</label>
+				<label><a href="{{request.base_url}}muokkaa?jid={{elem['jid']}}&eid={{elem['eid']}}&vpvm={{elem['vpvm']}}">Muokkaa</a></label>
+			</li>
+			{%endif%}
+		{%endfor%}
+	{%endfor%}
+	</ul>
+	</li>
+{%endfor%}
+</ul>
+</section>
+{% endblock content %}   

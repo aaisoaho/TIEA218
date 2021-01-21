@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{# määritellään base.html:ssa olevan title-alueen sisältö #}
+{% block title %}Leffavuokraamo - Vuokraa{% endblock title%}
+{# määritellään base.html:ssa olevan content-alueen sisältö #}
+{% block content %}
+<h1>Vuokraa</h1>
+<fieldset>
+<form action="{{request.base_url}}" method="post">
+{% if virheet|length > 0 %}<div class="virhelaatikko"><ul>
+	{% for er in virheet %}
+		<li>{{ er }}</li>
+	{% endfor %}
+</ul></div>{% endif %}
+<p>
+<label>Vuokraaja: 
+	<select id="nimi" name="Vuokraaja">
+	{%for n in nimet%}
+	<option {% if loop.first %}selected="selected"{% endif %} value="{{n['id']}}">{{n['nimi']}}</option>
+	{%endfor%}
+	</select>
+</label>
+</p>
+<p>
+<label>Vuokrattava elokuva: 
+	<select id="elokuva" name="Elokuva">
+	{%for e in elokuvat%}
+	<option {% if loop.first %}selected="selected"{% endif %} value="{{e['id']}}">{{e['nimi']}}</option>
+	{%endfor%}
+	</select></label>
+	</p>
+<p>
+<label>Vuokrauspäivä: <input type="text" name="vuokrauspvm" placeholder="YYYY-mm-dd"/></label></p>
+<p>
+<label>Palautuspäivä: <input type="text" name="palautuspvm" placeholder="YYYY-mm-dd"/></label></p>
+<p>
+<label>Maksettu summa: <input type="text" name="summa" placeholder="3"/></label>
+</p>
+<p>
+<input type="submit" name="laheta" value="Laske" />
+</p>
+</form></fieldset>
+{% endblock content %}   

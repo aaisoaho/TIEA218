@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{# määritellään base.html:ssa olevan title-alueen sisältö #}
+{% block title %}Leffavuokraamo - elokuvat{% endblock title%}
+{# määritellään base.html:ssa olevan content-alueen sisältö #}
+{% block content %}
+<section id="paasivu">
+<h1>Elokuvat</h1>
+<table>
+{# sort: {	0 = nimen mukaan, 
+#			1 = vuoden mukaan, 
+#			2 = hinnan mukaan, 
+#			3 = arvion mukaan, 
+#			4 = lajityypin mukaan}
+#}
+<tr><th><a href="{{request.base_url}}?sort=0">elokuvan nimi</a></th>
+<th><a href="{{request.base_url}}?sort=1">julkaisuvuosi</a></th>
+<th><a href="{{request.base_url}}?sort=2">vuokrahinta</a></th>
+<th><a href="{{request.base_url}}?sort=3">arvio</a></th>
+<th><a href="{{request.base_url}}?sort=4">lajityypin nimi</a></th></tr>
+{%for e in elokuvat%}
+	<tr><td>{{e['nimi']}}</td>
+	<td>{{e['vuosi']}}</td>
+	<td>{{e['hinta']}}</td>
+	<td>{{e['arvio']}}</td>
+	<td>{{e['genre']}}</td>
+	</tr>
+{%endfor%}
+</table>
+</section>
+{% endblock content %}   

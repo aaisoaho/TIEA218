@@ -1,0 +1,92 @@
+body {
+	background-color: #f6f6f6;
+}
+header {
+	display: block;
+	width: 100%;
+}
+#paasivu {
+	display: block;
+	width: 100%;
+}
+#paasivu ul {
+	list-style: none;
+}
+#paasivu ul li{
+	background-color: white;
+}
+#paasivu ul li ul li label {
+	padding: 0;
+	display: inline-block;
+	width: calc(20% - 2px);
+	border: none;
+	border-left: solid;
+	border-width: 1px;
+	border-color: #cacaca;
+	text-align: center;
+}
+#paasivu ul li ul li label:nth-child(5) {
+	width: 5%;
+	float: right;
+}
+#paasivu ul li ul li {
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+#paasivu ul li ul li:nth-child(even) {
+	background-color: #efefef;
+}
+#paasivu ul li ul li:nth-child(odd) {
+	background-color: #dedede;
+}
+.virhelaatikko {
+	position: relative;
+	display: block;
+	border: solid;
+	border-width: 4px;
+	border-color: #f00;
+	border-radius: 10px;
+	background-color: white;
+	padding: 4px;
+	margin: 1%;
+}
+.virhelaatikko li {
+	list-style: none;
+	width: inherit;
+	background-color: inherit;
+	border: none;
+	text-align: left;
+	padding-top: 14px;
+}
+.virhelaatikko li:before {
+	content: "!";
+	font-size: 20px;
+	padding: 6px;
+	border: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: #f00;
+	color: #f00;
+	margin: 2px;
+}
+fieldset p {
+	margin: 1%;
+	padding: 4px;
+}
+table {
+	border: 1px solid #cacaca;
+}
+table tr {
+	border-collapse: collapse;
+}
+table tr:nth-child(odd) {
+	background-color: #efefef;
+}
+table tr:nth-child(even) {
+	background-color: dedede;
+}
+table th {
+	border-bottom: 1px solid #cacaca;
+	background-color: white;
+}

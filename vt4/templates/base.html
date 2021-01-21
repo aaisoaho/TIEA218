@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../vuokraus.css" />
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <header><nav>
+	<a href="{{request.url_root}}">vuokrauslistaus</a>, 
+	<a href="{{request.url_root}}vuokraus">vuokrauksen lisäys</a>, 
+	<a href="{{request.url_root}}elokuvat">elokuvalistaus</a></nav></header>
+{# Määritellään lohkolle nimi (content) ja tämän nimen perusteella toinen template voi korvata tähän sisältöä #}
+    {% block content %} 
+    {% endblock content%}
+</body>
+</html>

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{# määritellään base.html:ssa olevan title-alueen sisältö #}
+{% block title %}Leffavuokraamo - Muokkaa vuokrausta{% endblock title%}
+{# määritellään base.html:ssa olevan content-alueen sisältö #}
+{% block content %}
+<h1>Muokkaa vuokrausta</h1>
+<fieldset>
+<form action="{{request.base_url}}?jid={{jid}}&eid={{eid}}&vpvm={{vpvm}}" method="post">
+{% if virheet|length > 0 %}<div class="virhelaatikko"><ul>
+	{% for er in virheet %}
+		<li>{{ er }}</li>
+	{% endfor %}
+</ul></div>{% endif %}
+<p>
+<label>Vuokraaja: 
+	<select id="nimi" name="Vuokraaja">
+	{%for n in nimet%}
+	<option {% if jid|string == n['id']|string %}selected="selected"{% endif %} value="{{n['id']}}">{{n['nimi']}}</option>
+	{%endfor%}
+	</select>
+</label>
+</p>
+<p>
+<label>Vuokrattava elokuva: 
+	<select id="elokuva" name="Elokuva">
+	{%for e in elokuvat%}
+	<option {% if eid|string == e['id']|string %}selected="selected"{% endif %} value="{{e['id']}}">{{e['nimi']}}</option>
+	{%endfor%}
+	</select></label>
+	</p>
+<p>
+<label>Vuokrauspäivä: <input type="text" name="vuokrauspvm" placeholder="YYYY-mm-dd" value="{{vpvm}}"/></label></p>
+<p>
+<label>Palautuspäivä: <input type="text" name="palautuspvm" placeholder="YYYY-mm-dd" value="{{ppvm}}"/></label></p>
+<p>
+<label>Maksettu summa: <input type="text" name="summa" placeholder="3" value="{{summa}}"/></label>
+</p>
+<p>
+<input type="submit" name="laheta" value="Muuta" /><input type="submit" name="poista" value="Poista" />
+</p>
+</form></fieldset>
+{% endblock content %}   
